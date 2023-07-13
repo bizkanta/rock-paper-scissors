@@ -1,6 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
-body { margin: 0; font-family: Roboto, "Arial Black", sans-serif; }
+html {
+  height: 100%;
+
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Arial Black", sans-serif;
+  background-image: url("./assets/images/beach.jpg");
+}
 
 h3 {
   font-size: clamp(1rem, 1.5vw, 2.5rem);

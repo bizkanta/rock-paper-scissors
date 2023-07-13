@@ -1,8 +1,14 @@
 .container {
   width: 90%;
   margin: auto;
+  padding-bottom: .25rem;
+  background-color: #fffded;
+  opacity: .88;
+  border-radius: 1rem;
 }
 
 h3 {
-  margin: 2rem;
+  margin: 1rem;
+  padding-top: 1rem;
+  font-weight: 400;
 }

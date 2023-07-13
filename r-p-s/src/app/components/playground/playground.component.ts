@@ -8,7 +8,7 @@ import { PlayerType } from "../../enums/player-type.enum";
   styleUrls: ['./playground.component.scss']
 })
 export class PlaygroundComponent {
-  @Output() winnerChosen = new EventEmitter<any>();
+  @Output() winnerChosen = new EventEmitter<PlayerType>();
   gameChoices = GameChoices;
 
   computerChoice!: GameChoices;

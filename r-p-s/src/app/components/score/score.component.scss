@@ -19,7 +19,7 @@
       text-align: center;
 
       .score {
-        background-color: white;
+        background-color: #fffded;
         font-weight: 500;
         padding: 1rem;
         margin: 1rem;
@@ -44,6 +44,10 @@
   border-radius: 1rem;
   background-color: lightgray;
   font-size: 1rem;
+
+  h3 {
+    margin-bottom: 0;
+  }
 }
 
 
