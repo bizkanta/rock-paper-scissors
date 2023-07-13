@@ -1,20 +1,19 @@
 <div class="scores">
-  <h1>Score</h1>
-
+  <h3>Score</h3>
   <div class="scores-list">
     <div class="list-item">
-      <p class="score">{{ humanScore }}</p>
-      You
+      <p class="score">{{ score.humanScore }}</p>
+      <p class="score-text">You</p>
     </div>
     <div class="list-item">
-      <p class="score">{{ computerScore }}</p>
-      Computer
+      <p class="score">{{ score.computerScore }}</p>
+      <p class="score-text">Computer</p>
     </div>
   </div>
 </div>
 
 <div class="result" *ngIf="result">
-  <h2>
-    {{ result !== 'draw' ? 'You have ' + result + '!' : "It's a draw!" }}
-  </h2>
+  <h3>
+    {{ result !== 'draw' ? 'You have ' + result + '!' : "It's a " + result + '!' }}
+  </h3>
 </div>

@@ -1,43 +1,45 @@
 .scores {
-  margin: 2rem;
-  padding: 2rem 1rem;
+  margin: 1rem;
+  padding: .5rem;
   border-radius: 1rem;
   background-color: lightcoral;
 
-  h1 {
+  h3 {
     color: white;
-    margin-top: 0;
-    margin-bottom: 1.5rem;
+    margin: .5rem 0;
   }
 
   .scores-list {
     display: flex;
-    gap: 1rem;
     justify-content: space-between;
-    padding: 0 2rem;
+    padding: 0 1rem;
 
     .list-item {
       flex: 1;
-      color: white;
       text-align: center;
-      text-transform: uppercase;
-      letter-spacing: .1rem;
 
       .score {
         background-color: white;
-        padding: 2rem;
-        margin: .5rem;
+        font-weight: 500;
+        padding: 1rem;
+        margin: 1rem;
         border-radius: .5rem;
         color: black;
-        font-weight: bold;
-        font-size: 2rem;
+        font-size: clamp(1rem, 1vw, 2rem);
+      }
+
+      .score-text {
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        font-size: clamp(.9rem, 1vw, 2rem);
       }
     }
   }
 }
 
 .result {
-  margin: 2rem 4rem;
+  margin: 0 4rem;
   padding: .5rem;
   border-radius: 1rem;
   background-color: lightgray;

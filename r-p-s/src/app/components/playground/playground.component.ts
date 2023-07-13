@@ -11,8 +11,8 @@ export class PlaygroundComponent {
   @Output() winnerChosen = new EventEmitter<any>();
   gameChoices = GameChoices;
 
-  computerChoice: any;
-  humanChoice: any;
+  computerChoice!: GameChoices;
+  humanChoice!: GameChoices;
 
   selectComputerChoice() {
     const enumValues = Object.values(this.gameChoices);
