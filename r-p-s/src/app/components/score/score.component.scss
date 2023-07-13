@@ -1,0 +1,47 @@
+.scores {
+  margin: 2rem;
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  background-color: lightcoral;
+
+  h1 {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .scores-list {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 0 2rem;
+
+    .list-item {
+      flex: 1;
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: .1rem;
+
+      .score {
+        background-color: white;
+        padding: 2rem;
+        margin: .5rem;
+        border-radius: .5rem;
+        color: black;
+        font-weight: bold;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+.result {
+  margin: 2rem 4rem;
+  padding: .5rem;
+  border-radius: 1rem;
+  background-color: lightgray;
+  font-size: 1rem;
+}
+
+

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IconService } from "./services/icon.service";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'rock-paper-scissors';
+
+  constructor(private iconService: IconService) {
+    this.iconService.registerIcons();
+  }
 }

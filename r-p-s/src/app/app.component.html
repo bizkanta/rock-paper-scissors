@@ -1,1 +1,3 @@
-<h1>Welcome to the great rock-paper-scissors game!</h1>
+<h1>Welcome to the great rock paper scissors game!</h1>
+<app-score #score></app-score>
+<app-playground (winnerChosen)="score.updateScore($event)"></app-playground>
