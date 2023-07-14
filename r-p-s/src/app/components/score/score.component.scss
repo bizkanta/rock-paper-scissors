@@ -13,10 +13,6 @@
 
   .restart-button-container {
     padding-left: 1rem;
-
-    .mat-icon-button:hover {
-      background-color: red;
-    }
   }
 }
 
@@ -28,7 +24,7 @@
 
   h3 {
     color: white;
-    margin: .5rem 0;
+    margin: .5rem 0 0 0;
   }
 
   .scores-list {
@@ -47,14 +43,14 @@
         margin: 1rem;
         border-radius: .5rem;
         color: black;
-        font-size: clamp(1rem, 1vw, 2rem);
+        font-size: clamp(1rem, .9vw, 2rem);
       }
 
       .score-text {
         color: white;
         text-transform: uppercase;
         letter-spacing: .1rem;
-        font-size: clamp(.9rem, 1vw, 2rem);
+        font-size: clamp(.8rem, 1vw, 2rem);
       }
     }
   }
