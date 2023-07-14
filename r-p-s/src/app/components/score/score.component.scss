@@ -1,3 +1,25 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  padding-top: 1rem;
+  align-items: center;
+
+  h3 {
+    font-weight: 500;
+    margin: 0;
+    padding-left: 1rem;
+  }
+
+  .restart-button-container {
+    padding-left: 1rem;
+
+    .mat-icon-button:hover {
+      background-color: red;
+    }
+  }
+}
+
 .scores {
   margin: 1rem;
   padding: .5rem;

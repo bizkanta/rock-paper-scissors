@@ -20,12 +20,12 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 1rem 1rem;
+    padding: .7rem;
 
     .rps-icon {
       padding: 1rem 3rem;
       min-width: clamp(6rem, 5vw, 10rem);
-      min-height: 5vw;
+      min-height: 4.5vw;
       cursor: pointer;
     }
 

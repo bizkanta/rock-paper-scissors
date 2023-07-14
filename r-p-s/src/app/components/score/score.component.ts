@@ -35,4 +35,12 @@ export class ScoreComponent implements OnInit {
     }
     localStorage.setItem('score', JSON.stringify(this.score))
   }
+
+  restartGame() {
+    this.score = {
+      humanScore: 0,
+      computerScore: 0
+    }
+    localStorage.clear();
+  }
 }

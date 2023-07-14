@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { PlaygroundComponent } from './components/playground/playground.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
 import { ScoreComponent } from './components/score/score.component';
 
@@ -20,6 +21,7 @@ import { ScoreComponent } from './components/score/score.component';
     AppRoutingModule,
     NoopAnimationsModule,
     MatIconModule,
+    MatButtonModule,
     HttpClientModule
   ],
   providers: [],
