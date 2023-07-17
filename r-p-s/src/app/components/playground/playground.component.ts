@@ -10,11 +10,11 @@ import { PlayerType } from "../../enums/player-type.enum";
 export class PlaygroundComponent {
   @Output() winnerChosen = new EventEmitter<PlayerType>();
   gameChoices = GameChoices;
-  computerChoice!: GameChoices;
-  humanChoice!: GameChoices;
+  computerChoice!: string;
+  humanChoice!: string;
 
   selectComputerChoice(): void  {
-    const enumValues = Object.values(this.gameChoices);
+    const enumValues = Object.keys(this.gameChoices);
     const randomIndex = Math.floor(Math.random() * enumValues.length);
     this.computerChoice = enumValues[randomIndex]
   }
