@@ -20,7 +20,7 @@
   margin: 1rem;
   padding: .5rem;
   border-radius: 1rem;
-  background-color: lightcoral;
+  background-color: var(--score-background);
 
   h3 {
     color: white;
@@ -37,7 +37,7 @@
       text-align: center;
 
       .score {
-        background-color: #fffded;
+        background-color: var(--background);
         font-weight: 500;
         padding: 1rem;
         margin: 1rem;
@@ -60,7 +60,7 @@
   margin: 0 4rem;
   padding: .5rem;
   border-radius: 1rem;
-  background-color: lightgray;
+  background-color: var(--result-background);
   font-size: 1rem;
 
   h3 {

@@ -1,6 +1,11 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ResultType } from "../../enums/result-type.enum";
 import { PlayerType } from "../../enums/player-type.enum";
+
+interface Score {
+  humanScore: number;
+  computerScore: number;
+}
 
 @Component({
   selector: 'app-score',
@@ -8,11 +13,10 @@ import { PlayerType } from "../../enums/player-type.enum";
   styleUrls: ['./score.component.scss']
 })
 export class ScoreComponent implements OnInit {
-  score = {
+  score: Score = {
     humanScore: 0,
     computerScore: 0
   }
-
   result!: ResultType;
 
   ngOnInit(): void {
@@ -20,7 +24,7 @@ export class ScoreComponent implements OnInit {
       || JSON.stringify(this.score));
   }
 
-  updateScore(winner: PlayerType) {
+  updateScore(winner: PlayerType): void {
     switch(winner) {
       case PlayerType.human:
         this.score.humanScore++;
@@ -36,7 +40,7 @@ export class ScoreComponent implements OnInit {
     localStorage.setItem('score', JSON.stringify(this.score))
   }
 
-  restartGame() {
+  restartGame(): void  {
     this.score = {
       humanScore: 0,
       computerScore: 0
